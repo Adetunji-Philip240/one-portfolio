@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Raleway", sans-serif;
+  }
+}
+html {
+  background-image: linear-gradient(rgb(26, 25, 25), gray);
+}
+#intro {
+  margin-top: 200px;
+}
+.photo {
+  height: 40vh;
+  width: 60vw;
+  margin-bottom: 100px;
+}
+
+#about {
+  margin-top: 300px;
+}
+#portfolio {
+  margin-top: 300px;
+}
+#experience {
+  margin-top: 100px;
+}
+
+@media only screen and (min-width: 992px) {
+  #portfolio {
+    margin-top: 2200px;
+  }
+  #experience {
+    margin-top: 4100px;
+  }
+  #contact {
+    margin-top: 2100px;
+  }
+}
