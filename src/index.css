@@ -14,6 +14,7 @@
 html {
   background-image: linear-gradient(rgb(26, 25, 25), gray);
 }
+/*for mobile*/
 #intro {
   margin-top: 200px;
 }
@@ -24,15 +25,19 @@ html {
 }
 
 #about {
-  margin-top: 300px;
+  margin-top: 400px;
 }
 #portfolio {
-  margin-top: 300px;
+  margin-top: 400px;
 }
 #experience {
   margin-top: 100px;
 }
+#contact {
+  margin-top: 100px;
+}
 
+/*for desktop*/
 @media only screen and (min-width: 992px) {
   #portfolio {
     margin-top: 2200px;
