@@ -1,26 +1,30 @@
 import React from "react";
-import myCalc from "../mypic/calculatorsite.png";
-import inec from "../mypic/inec.png";
-import lautech from "../mypic/lautech.png";
+import captains from "../mypic/captains.jpg";
+import apacalc from "../mypic/apacalc.jpg";
+import mamaade from "../mypic/mamaade.jpg";
 import mc from "../mypic/mc.png";
 
 const Portfolio = () => {
   const portfolio = [
     {
       id: 1,
-      src: myCalc,
+      src: captains,
+      link: "https://captainscafeteria.netlify.app/",
     },
     {
       id: 2,
-      src: inec,
+      src: apacalc,
+      link: "https://apacalculator.netlify.app/",
     },
     {
       id: 3,
-      src: lautech,
+      src: mamaade,
+      link: "https://mamaadenoodles.netlify.app/",
     },
     {
       id: 4,
       src: mc,
+      link: "https://murphycomputershop.netlify.app/",
     },
   ];
   return (
@@ -35,8 +39,11 @@ const Portfolio = () => {
           </p>
           <p className="py-6">Check out some my work right here</p>
         </div>
-        <div id="portfolio-grid" className="grid sm:grid-col-2 md:grid-col-3 gap-8 px-12 sm:px-0">
-          {portfolio.map(({ id, src }) => (
+        <div
+          id="portfolio-grid"
+          className="grid sm:grid-col-2 md:grid-col-3 gap-8 px-12 sm:px-0"
+        >
+          {portfolio.map(({ id, src, link }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -44,9 +51,11 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <button className="w-1/2 py-3 m-4 duration-200 hover:scale-105">
+                    Demo
+                  </button>
+                </a>
                 <button className="w-1/2 py-3 m-4 duration-200 hover:scale-105">
                   Code
                 </button>
