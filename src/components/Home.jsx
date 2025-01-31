@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Wale from "../mypic/Wale.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       name="home"
@@ -11,10 +16,10 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md-flex-row">
         <div id="intro" className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white mt-6">
+          <h2 className="text-4xl sm:text-7xl font-bold text-white mt-6" data-aos="zoom-in" data-aos-duration="2000">
             I'm a Full Stack Developer
           </h2>
-          <p className="text-gray-500  max-w-md">
+          <p className="text-gray-500  max-w-md" data-aos="fade-down" data-aos-duration="2000">
             I am a passionate and results-driven Web Developer, Computer
             Engineer, and Programmer with a deep love for turning innovative
             ideas into reality through code. My Journey in the tech world has

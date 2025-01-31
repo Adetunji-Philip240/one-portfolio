@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import html from "../mypic/html.png";
 import css from "../mypic/css.png";
 import javascript from "../mypic/javascript.png";
@@ -8,8 +8,13 @@ import java from "../mypic/java.webp";
 import python from "../mypic/python.webp";
 import c from "../mypic/c.png";
 import kotlin from "../mypic/kotlin.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const techs = [
     {
       id: 1,
@@ -71,6 +76,7 @@ const Experience = () => {
     <div
       name="experience"
       className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      data-aos="fade-up" data-aos-duration="2000"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div id="experience">

@@ -14,7 +14,33 @@
 html {
   background-image: linear-gradient(rgb(26, 25, 25), gray);
 }
+
+.photo {
+  height: 40vh;
+  width: 60vw;
+  margin-bottom: 50px;
+}
+#about {
+  margin-top: -1000px;
+}
+#portfolio {
+  margin-top: -800px;
+}
+
+#experience {
+  margin-top: -100px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
 /*for mobile*/
+@media screen and (max-width: 767px) {
 #intro {
   margin-top: 200px;
 }
@@ -25,27 +51,34 @@ html {
 }
 
 #about {
-  margin-top: 400px;
+  margin-top: -300px;
 }
 #portfolio {
-  margin-top: 400px;
+  margin-top: -300px;
 }
 #experience {
-  margin-top: 230px;
+  margin-top: 390px;
 }
 #contact {
-  margin-top: 200px;
+  margin-top: 400px;
+}
 }
 
 /*for desktop*/
 @media only screen and (min-width: 992px) {
+  #intro {
+  margin-top: 200px;
+}
   #portfolio {
-    margin-top: 2200px;
+    margin-top: 1000px;
   }
+  #about {
+  margin-top: -300px;
+}
   #experience {
-    margin-top: 4100px;
+    margin-top: 2800px;
   }
   #contact {
-    margin-top: 2100px;
+    margin-top: 1500px;
   }
 }

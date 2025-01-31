@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import captains from "../mypic/captains.jpg";
 import apacalc from "../mypic/apacalc.jpg";
 import mamaade from "../mypic/mamaade.jpg";
 import mc from "../mypic/mc.png";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Portfolio = () => {
+  
   const portfolio = [
     {
       id: 1,
@@ -27,12 +29,15 @@ const Portfolio = () => {
       link: "https://murphycomputershop.netlify.app/",
     },
   ];
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       name="portfolio"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen "
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full " data-aos="zoom-in-down" data-aos-duration="2000">
         <div id="portfolio" className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
@@ -52,13 +57,13 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                  <button className="w-1/2 py-3 m-4 duration-200 hover:scale-105">
-                    Demo
+                  <button className="py-3 m-4 duration-200 hover:scale-105">
+                    Check the Website
                   </button>
                 </a>
-                <button className="w-1/2 py-3 m-4 duration-200 hover:scale-105">
+                {/* <button className="w-1/2 py-3 m-4 duration-200 hover:scale-105">
                   Code
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
@@ -66,6 +71,8 @@ const Portfolio = () => {
       </div>
     </div>
   );
+
+  
 };
 
 export default Portfolio;
