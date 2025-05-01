@@ -12,14 +12,9 @@
   }
 }
 html {
-  background-image: linear-gradient(rgb(26, 25, 25), gray);
+  background-color: rgb(17, 15, 15);
 }
 
-.photo {
-  height: 40vh;
-  width: 60vw;
-  margin-bottom: 50px;
-}
 #about {
   margin-top: -1000px;
 }
@@ -41,40 +36,35 @@ html {
 
 /*for mobile*/
 @media screen and (max-width: 767px) {
-#intro {
-  margin-top: 200px;
-}
-.photo {
-  height: 40vh;
-  width: 60vw;
-  margin-bottom: 100px;
-}
+  #intro {
+    margin-top: 200px;
+  }
 
-#about {
-  margin-top: -300px;
-}
-#portfolio {
-  margin-top: -300px;
-}
-#experience {
-  margin-top: 390px;
-}
-#contact {
-  margin-top: 400px;
-}
+  #about {
+    margin-top: -300px;
+  }
+  #portfolio {
+    margin-top: -300px;
+  }
+  #experience {
+    margin-top: 390px;
+  }
+  #contact {
+    margin-top: 400px;
+  }
 }
 
 /*for desktop*/
 @media only screen and (min-width: 992px) {
   #intro {
-  margin-top: 200px;
-}
+    margin-top: 200px;
+  }
   #portfolio {
     margin-top: 1000px;
   }
   #about {
-  margin-top: -300px;
-}
+    margin-top: -300px;
+  }
   #experience {
     margin-top: 2800px;
   }
